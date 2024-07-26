@@ -1,4 +1,3 @@
-/* Reset default margin and padding */
 html, body {
     margin: 0;
     padding: 0;
@@ -10,16 +9,24 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Anda dapat menyesuaikan lebar maksimum sesuai kebutuhan */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
     background-color: white;
 }
 
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .logo-title {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
 }
 
 .logo {
@@ -44,6 +51,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -68,9 +76,9 @@ nav ul li a:hover {
 .hero img {
     width: 100%;
     height: auto;
-    display: block; /* Menghapus spasi putih di bawah gambar */
-    max-height: 300px; /* Sesuaikan tinggi maksimum sesuai keinginan Anda */
-    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .content {
@@ -90,12 +98,12 @@ nav ul li a:hover {
 
 .gallery {
     display: flex;
-    flex-direction: row; /* Mengatur galeri menjadi horizontal */
+    flex-direction: row;
     align-items: flex-start;
 }
 
 .gallery img {
-    margin-right: 10px; /* Menambahkan margin antara gambar */
-    max-width: 150px; /* Menyesuaikan ukuran gambar */
+    margin-right: 10px;
+    max-width: 150px; 
     height: auto;
 }
