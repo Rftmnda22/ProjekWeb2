@@ -1,5 +1,4 @@
 console.log("JavaScript file is connected");
-console.log("JavaScript file is connected");
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         if (this.getAttribute('href').startsWith('#')) {
